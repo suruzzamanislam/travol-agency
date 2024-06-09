@@ -1,0 +1,49 @@
+.slide_c {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+}
+.slide_c::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #0f2454;
+  opacity: 0.5;
+}
+#slide_1 {
+  background-image: url(../../../assets/h_slider_1.jpg);
+}
+#slide_2 {
+  background-image: url(../../../assets/h_slider_2.jpg);
+  background-position: bottom;
+}
+#slide_3 {
+  background-image: url(../../../assets/h_slider_3.jpg);
+  background-position: bottom;
+}
+.trns_text {
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+select {
+  background: #fff url('../../../assets/arrow.svg') no-repeat right 0.75rem
+    center;
+  -webkit-background-size: 8px 10px;
+  -webkit-appearance: none;
+}
+.swiper-pagination-bullet {
+  background-color: #26bd6a;
+  width: 15px;
+  height: 15px;
+}
+.swiper-pagination-bullet-active-prev,
+.swiper-pagination-bullet-active-next {
+  opacity: 1;
+  background-color: #7493db;
+}
+.swiper-pagination-bullet-active {
+  outline: 1px solid white;
+  outline-offset: 5px;
+}
