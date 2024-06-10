@@ -9,3 +9,7 @@ body {
 .active {
   color: #9cb3e8;
 }
+.dots {
+  background-image: url(./assets/dots.png);
+  background-repeat: repeat;
+}
