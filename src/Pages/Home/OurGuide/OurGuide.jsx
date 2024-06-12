@@ -9,7 +9,7 @@ const OurGuide = () => {
   const Letter = text.split('');
   // console.log(Letter);
   return (
-    <div className="container md:h-screen">
+    <div className="container lg:h-screen">
       <div className="flex flex-col gap-y-5 lg:gap-y-0 lg:flex-row py-8  lg:py-20">
         <div className="lg:w-[60%] lg:pr-16">
           <p className="uppercase text-[#2095AE] tracking-widest md:tracking-[4px] font-mono">
@@ -53,14 +53,14 @@ const OurGuide = () => {
         </div>
         <div className="lg:w-[40%] relative">
           <img
-            className="w-5/6 hover:scale-95 duration-500 ease-in-out"
+            className="w-full md:w-5/6 hover:scale-95 duration-500 ease-in-out"
             src={guideImg}
             alt=""
           />
-          <div className="absolute top-8 -z-10 right-10 w-5/6 h-[93%] bg-[#2095AE]"></div>
+          <div className="absolute top-8 -z-10 right-10 w-full md:w-5/6 h-full bg-[#2095AE]"></div>
           <div className="dots hidden md:block absolute -top-10 -left-10  w-[40%] h-[35%] -z-10"></div>
           <div className="">
-            <section className="">
+            <section className=" md:right-[75px]">
               {Letter.map((item, index) => {
                 return (
                   <span
