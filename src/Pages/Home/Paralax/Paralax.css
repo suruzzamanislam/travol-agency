@@ -1,0 +1,7 @@
+#paralax {
+  background-image: url(../../../assets/paralax.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
