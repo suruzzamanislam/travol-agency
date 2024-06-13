@@ -1,7 +1,9 @@
 import Header from './Header/Header';
 import OurGuide from './OurGuide/OurGuide';
 import Paralax from './Paralax/Paralax';
+import PopularDestinations from './PopularDestinations/PopularDestinations';
 import PopularTours from './PopularTours/PopularTours';
+import Video from './Video/Video';
 
 const Home = () => {
   return (
@@ -10,6 +12,8 @@ const Home = () => {
       <OurGuide />
       <PopularTours />
       <Paralax />
+      <PopularDestinations />
+      <Video />
     </div>
   );
 };
