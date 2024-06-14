@@ -146,6 +146,7 @@ const TravelCountries = () => {
             }}
             autoplay={{
               delay: 1500,
+              reverseDirection: true,
             }}
             breakpoints={{
               640: {

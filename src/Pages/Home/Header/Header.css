@@ -33,17 +33,17 @@ select {
   -webkit-background-size: 8px 10px;
   -webkit-appearance: none;
 }
-.swiper-pagination-bullet {
+#header .swiper-pagination-bullet {
   background-color: #26bd6a;
   width: 15px;
   height: 15px;
 }
-.swiper-pagination-bullet-active-prev,
+#header .swiper-pagination-bullet-active-prev,
 .swiper-pagination-bullet-active-next {
   opacity: 1;
   background-color: #7493db;
 }
-.swiper-pagination-bullet-active {
+#header .swiper-pagination-bullet-active {
   outline: 1px solid white;
   outline-offset: 5px;
 }

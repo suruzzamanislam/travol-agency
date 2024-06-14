@@ -1,4 +1,4 @@
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import { SwiperSlide, Swiper } from 'swiper/react';
 import PCard from '../../../Componet/PCard';
 import maldives from '../../../assets/maldives1 (1).jpg';
@@ -22,11 +22,10 @@ const PopularDestinations = () => {
         <Swiper
           speed={1500}
           loop={true}
-          autoplay={{
-            delay: 2000,
+          pagination={{
+            clickable: true,
           }}
-          pagination={true}
-          modules={[Pagination, Autoplay]}
+          modules={[Pagination]}
         >
           <SwiperSlide>
             <div className="grid gap-6 md:grid-cols-3">
