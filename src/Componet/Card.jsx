@@ -14,16 +14,18 @@ const Card = ({ title, days, users, place, reviews, cost, img }) => {
       <div className="w-full h-full absolute inset-0 bg-gradient-to-t from-black opacity-20 group-hover:opacity-85 duration-500 "></div>
       <div className="w-full h-full absolute inset-0 flex items-end">
         <div className="text-white w-full px-6 pb-3 translate-y-11 group-hover:translate-y-0 duration-500">
-          <div className="text-orange-400 flex items-center gap-x-1">
-            <IoMdStar></IoMdStar>
-            <IoMdStar></IoMdStar>
-            <IoMdStar></IoMdStar>
-            <IoMdStar></IoMdStar>
-            <IoMdStar className="text-white"></IoMdStar>
-            <p className="text-xs text-white">
-              (<span>{reviews}</span> reviews)
-            </p>
-          </div>
+          {reviews && (
+            <div className="text-orange-400 flex items-center gap-x-1">
+              <IoMdStar></IoMdStar>
+              <IoMdStar></IoMdStar>
+              <IoMdStar></IoMdStar>
+              <IoMdStar></IoMdStar>
+              <IoMdStar className="text-white"></IoMdStar>
+              <p className="text-xs text-white">
+                (<span>{reviews}</span> reviews)
+              </p>
+            </div>
+          )}
           <h1 className="text-2xl font-semibold">{title}</h1>
           <div className="w-1/6 group-hover:w-full duration-500 h-[1px] mt-2 mb-6 origin-left bg-gray-100"></div>
           <div className="flex gap-x-3 items-center text-sm">

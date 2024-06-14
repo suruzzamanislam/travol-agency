@@ -3,7 +3,7 @@ import { IoLocationOutline } from 'react-icons/io5';
 
 const Video = () => {
   return (
-    <div className="md:h-[70vh] w-full my-4 md:my-24 relative">
+    <div className="md:h-[70vh] w-full my-10 md:my-24 relative">
       <video
         className="w-full h-full object-cover"
         loop={true}
