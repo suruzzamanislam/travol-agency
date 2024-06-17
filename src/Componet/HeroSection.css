@@ -1,0 +1,15 @@
+.hero_box {
+  background-image: url(../assets/paralax.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.hero_box::after {
+  content: '';
+  background-color: #0f2454;
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
+}

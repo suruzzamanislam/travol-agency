@@ -11,7 +11,11 @@ const OurGuide = () => {
   return (
     <div className="container lg:h-screen">
       <div className="flex flex-col gap-y-5 lg:gap-y-0 lg:flex-row py-8  lg:py-20">
-        <div className="lg:w-[60%] lg:pr-16">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="lg:w-[60%] lg:pr-16"
+        >
           <p className="uppercase text-[#2095AE] tracking-widest md:tracking-[4px] font-mono">
             THE BEST TRAVEL AGENCY
           </p>
@@ -51,7 +55,12 @@ const OurGuide = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-[40%] relative">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="lg:w-[40%] relative"
+        >
           <img
             className="w-full md:w-5/6 hover:scale-95 duration-500 ease-in-out"
             src={guideImg}

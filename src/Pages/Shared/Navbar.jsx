@@ -2,34 +2,52 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 // mobile menu icon
 import { Fade as Hamburger } from 'hamburger-react';
-import { useState } from 'react';
+import { useContext } from 'react';
+import { AllContext } from '../../AllProvider/AllProvider';
 const Navbar = () => {
+  const { isOpen, setOpen } = useContext(AllContext);
+  const handleIsOpen = () => {
+    setOpen(false);
+  };
   const navItem = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink onClick={handleIsOpen} to="/">
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/about">About</NavLink>
+        <NavLink onClick={handleIsOpen} to="/about">
+          About
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/tour">Tour</NavLink>
+        <NavLink onClick={handleIsOpen} to="/tour">
+          Tour
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/destinations">Destinations</NavLink>
+        <NavLink onClick={handleIsOpen} to="/destinations">
+          Destinations
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/gallery">Gallery</NavLink>
+        <NavLink onClick={handleIsOpen} to="/gallery">
+          Gallery
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/blog">Blog</NavLink>
+        <NavLink onClick={handleIsOpen} to="/blog">
+          Blog
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink onClick={handleIsOpen} to="/contact">
+          Contact
+        </NavLink>
       </li>
     </>
   );
-  const [isOpen, setOpen] = useState(false);
 
   return (
     <>
@@ -40,7 +58,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <Hamburger color="white" toggled={isOpen} toggle={setOpen} />
           <ul
-            className={`absolute z-50 text-white opacity-95 bg-[#0f2454] left-0 mt-2 flex flex-col items-center origin-top gap-y-2 py-2 w-full duration-300 ${
+            className={`absolute z-40 text-white  bg-[#0f2454] left-0 mt-2 flex flex-col items-center origin-top gap-y-2 py-2 w-full duration-300 ${
               isOpen ? 'scale-y-100' : ' scale-y-0'
             }`}
           >
