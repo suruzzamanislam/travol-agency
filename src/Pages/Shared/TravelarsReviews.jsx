@@ -1,11 +1,11 @@
 import { MdPhoneInTalk } from 'react-icons/md';
-import user1 from '../../../assets/user1.png';
-import user2 from '../../../assets/user2.png';
-import user3 from '../../../assets/user3.png';
-import icon1 from '../../../assets/icon1.png';
-import icon2 from '../../../assets/icon2.png';
-import icon3 from '../../../assets/icon3.png';
-import icon4 from '../../../assets/icon4.png';
+import user1 from '../../assets/user1.png';
+import user2 from '../../assets/user2.png';
+import user3 from '../../assets/user3.png';
+import icon1 from '../../assets/icon1.png';
+import icon2 from '../../assets/icon2.png';
+import icon3 from '../../assets/icon3.png';
+import icon4 from '../../assets/icon4.png';
 import { BsStarFill } from 'react-icons/bs';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -34,7 +34,11 @@ const TravelarsReviews = () => {
             </p>
           </div>
 
-          <div className="md:absolute right-0 -bottom-20 bg-white p-3 md:p-6 lg:px-14 lg:py-12 shadow-sm shadow-gray-300 md:w-2/5 my-5 md:my-0">
+          <div
+            data-aos="fade-up"
+            data-aos-duration={1000}
+            className="md:absolute right-0 -bottom-20 bg-white p-3 md:p-6 lg:px-14 lg:py-12 shadow-sm shadow-gray-300 md:w-2/5 my-5 md:my-0"
+          >
             <div className="container">
               <p className="uppercase text-[#2095AE] tracking-widest md:tracking-[4px] font-mono">
                 TESTIMONIALS

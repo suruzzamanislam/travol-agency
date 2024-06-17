@@ -38,7 +38,12 @@ const PopularTours = () => {
             img={italyImg}
           ></Card>
         </div>
-        <div className="">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="400"
+          // data-aos-delay="300"
+          className=""
+        >
           <Card
             title="France Tour"
             days="9 Days"
@@ -49,7 +54,7 @@ const PopularTours = () => {
             img={franceImg}
           ></Card>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="200">
           <Card
             title="Greece Tour"
             days="2 Days"
@@ -60,7 +65,7 @@ const PopularTours = () => {
             img={greeceImg}
           ></Card>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="300">
           <Card
             title="Canada Tour"
             days="4 Days"

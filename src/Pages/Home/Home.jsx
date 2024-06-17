@@ -5,7 +5,6 @@ import PopularDestinations from './PopularDestinations/PopularDestinations';
 import PopularTours from './PopularTours/PopularTours';
 import TravelCountries from './TravelCountries/TravelCountries';
 import TravelExperience from './TravelExperience/TravelExperience';
-import TravelarsReviews from './TravelarsReviews/TravelarsReviews';
 import Video from './Video/Video';
 
 const Home = () => {
@@ -21,7 +20,6 @@ const Home = () => {
       <Video />
       <TravelCountries />
       <TravelExperience />
-      <TravelarsReviews />
     </div>
   );
 };
