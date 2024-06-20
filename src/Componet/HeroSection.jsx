@@ -7,12 +7,12 @@ import { AllContext } from '../AllProvider/AllProvider';
 const HeroSection = ({ title, w1, w2, w3, w4, colorWord, sColorWord, br }) => {
   const { isOpen } = useContext(AllContext);
   return (
-    <div className="hero_box h-[65vh] w-full flex flex-col justify-center">
+    <div className="hero_box h-[35vh] md:h-[65vh] w-full flex flex-col justify-center">
       <nav className="absolute top-0 z-10 w-full">
         <Navbar />
       </nav>
 
-      <div className="container text-white -mt-16">
+      <div className="container text-white -mt-10 md:-mt-16">
         <div className={`absolute ${isOpen ? 'z-0' : 'z-10'}`}>
           <p
             data-aos="fade-up"

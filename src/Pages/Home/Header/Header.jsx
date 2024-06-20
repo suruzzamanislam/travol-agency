@@ -101,7 +101,7 @@ const Header = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="absolute bottom-16 md:bottom-28  z-10 w-full ">
+      <div className="absolute bottom-32 md:bottom-28  z-10 w-full ">
         <div className="container ">
           <form
             className="grid md:grid-cols-4 items-center text-gray-500 border-[15px] border-opacity-50  border-gray-300"
