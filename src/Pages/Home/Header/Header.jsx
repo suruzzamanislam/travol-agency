@@ -11,7 +11,7 @@ import { IoSearch } from 'react-icons/io5';
 import Navbar from '../../Shared/Navbar';
 const Header = () => {
   return (
-    <div id="header" className="w-full h-screen relative">
+    <div id="header" className="w-full md:h-screen h-[85vh] relative">
       <nav className="absolute top-0 z-50 w-full">
         <Navbar />
       </nav>
@@ -26,7 +26,7 @@ const Header = () => {
           dynamicBullets: true,
         }}
         modules={[Pagination, Autoplay, EffectFade]}
-        className="mySwiper"
+        className="mySwiper h-full w-full"
       >
         <SwiperSlide>
           <div id="slide_1" className="slide_c w-full h-screen relative">
@@ -101,14 +101,14 @@ const Header = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="absolute bottom-32 md:bottom-28  z-10 w-full ">
+      <div className="absolute bottom-12 md:bottom-28  z-10 w-full ">
         <div className="container ">
           <form
-            className="grid md:grid-cols-4 items-center text-gray-500 border-[15px] border-opacity-50  border-gray-300"
+            className="grid md:grid-cols-4 items-center text-gray-500 border-[15px] border-opacity-50  border-gray-300 bg-gray-200 gap-y-4"
             action="#"
           >
             <input
-              className="p-4 focus:outline-none border-e border-gray-500"
+              className="p-4 focus:outline-none md:border-e border-gray-500"
               type="text"
               placeholder="Where to?"
               name=""
@@ -116,7 +116,7 @@ const Header = () => {
             />
             <select
               name=""
-              className="dst appearance-none p-4 focus:outline-none border-e border-gray-500 "
+              className="dst appearance-none p-4 focus:outline-none md:border-e border-gray-500 "
               id=""
             >
               <option value="Destinations">Destinations</option>
@@ -128,7 +128,7 @@ const Header = () => {
             </select>
             <select
               name="dur"
-              className="appearance-none p-4 focus:outline-none border-e border-gray-500 "
+              className="appearance-none p-4 focus:outline-none md:border-e border-gray-500 "
               id=""
             >
               <option value="Duration">Duration</option>
