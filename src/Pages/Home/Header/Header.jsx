@@ -12,7 +12,7 @@ import Navbar from '../../Shared/Navbar';
 const Header = () => {
   return (
     <div id="header" className="w-full h-screen relative">
-      <nav className="absolute top-0 z-10 w-full">
+      <nav className="absolute top-0 z-50 w-full">
         <Navbar />
       </nav>
       <Swiper

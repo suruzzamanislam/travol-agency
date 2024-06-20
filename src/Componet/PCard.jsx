@@ -6,9 +6,11 @@ const PCard = ({ cost, title, tourPackage, img }) => {
   return (
     <div className="relative overflow-hidden group">
       <img className="group-hover:scale-110 duration-500" src={img} alt="" />
-      <div className="absolute right-0 rotate-[-90deg] group-hover:rotate-0 duration-500 group-hover:right-4 group-hover:top-2 text-white  tracking-widest bg-[#2095AE] top-10 py-2 px-4 text-sm ">
-        <p>{cost}</p>
-      </div>
+      {cost && (
+        <div className="absolute right-0 rotate-[-90deg] group-hover:rotate-0 duration-500 group-hover:right-4 group-hover:top-2 text-white  tracking-widest bg-[#2095AE] top-10 py-2 px-4 text-sm ">
+          <p>{cost}</p>
+        </div>
+      )}
       <div className="w-full h-full absolute inset-0 bg-gradient-to-t from-black opacity-20 group-hover:opacity-85 duration-500 "></div>
       <div className="w-full h-full absolute inset-0 flex items-end">
         <div className="text-white w-full px-6 pb-3 translate-y-11 group-hover:translate-y-0 duration-500">

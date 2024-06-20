@@ -5,6 +5,13 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #0f2454;
+  }
 }
 .active {
   color: #9cb3e8;

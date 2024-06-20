@@ -48,7 +48,7 @@ const TravelarsReviews = () => {
               </h1>
             </div>
             <Swiper
-              speed={1500}
+              speed={1000}
               loop={true}
               pagination={{
                 clickable: true,

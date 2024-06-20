@@ -44,6 +44,6 @@ select {
   background-color: #7493db;
 }
 #header .swiper-pagination-bullet-active {
-  outline: 1px solid white;
+  outline: 2px solid rgb(24, 184, 13);
   outline-offset: 5px;
 }
