@@ -9,6 +9,8 @@ import './Header.css';
 // icons
 import { IoSearch } from 'react-icons/io5';
 import Navbar from '../../Shared/Navbar';
+import { motion } from 'framer-motion';
+
 const Header = () => {
   return (
     <div id="header" className="w-full md:h-screen h-[85vh] relative">
@@ -31,72 +33,93 @@ const Header = () => {
         <SwiperSlide>
           <div id="slide_1" className="slide_c w-full h-screen relative">
             <div className="bg-transparent absolute w-full h-full flex mt-32 md:mt-0 md:justify-center items-center flex-col text-white z-10">
-              <p
-                data-aos="fade-up"
-                data-aos-duration="500"
+              <motion.p
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  duration: 0.4,
+                }}
                 className="uppercase md:text-xl tracking-widest md:tracking-[6px] font-mono"
               >
                 Let us travel the world with us
-              </p>
-              <div
-                data-aos="fade-up"
-                data-aos-delay="100"
-                data-aos-duration="1000"
+              </motion.p>
+              <motion.div
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.2,
+                }}
                 className="text-4xl md:text-7xl font-bold uppercase tracking-wider text-center mt-3"
               >
                 <p>Explore The World With</p>
                 <p>
                   With <span className="trns_text">Travol</span>
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div id="slide_2" className="slide_c w-full h-screen relative">
             <div className="bg-transparent absolute w-full h-full flex mt-32 md:mt-0 md:justify-center items-center flex-col text-white z-10">
-              <p
-                data-aos="fade-up"
-                data-aos-duration="500"
+              <motion.p
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  duration: 0.4,
+                }}
                 className="uppercase md:text-xl tracking-widest md:tracking-[6px] font-mono"
               >
                 Let us travel the world with us
-              </p>
-              <div
-                data-aos="fade-up"
-                data-aos-delay="100"
-                data-aos-duration="1000"
+              </motion.p>
+              <motion.div
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.2,
+                }}
                 className="text-4xl md:text-7xl font-bold uppercase tracking-wider text-center mt-3"
               >
                 <p>
                   <span className="trns_text">Discover</span> the world{' '}
                 </p>
                 <p>with our guide</p>
-              </div>
+              </motion.div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div id="slide_3" className="slide_c w-full h-screen relative">
             <div className="bg-transparent absolute w-full h-full flex mt-32 md:mt-0 md:justify-center items-center flex-col text-white z-10">
-              <p
-                data-aos="fade-up"
-                data-aos-duration="500"
+              <motion.p
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  duration: 0.4,
+                }}
                 className="uppercase md:text-xl tracking-widest md:tracking-[6px] font-mono"
               >
                 Let us travel the world with us
-              </p>
-              <div
-                data-aos="fade-up"
-                data-aos-delay="100"
-                data-aos-duration="1000"
+              </motion.p>
+              <motion.div
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.2,
+                }}
                 className="text-4xl md:text-7xl font-bold uppercase tracking-wider text-center mt-3"
               >
                 <p>Explore Rome With</p>
                 <p>
                   <span className="trns_text">Travol</span>
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
         </SwiperSlide>

@@ -2,6 +2,8 @@ import guideImg from '../../../assets/guide.jpeg';
 import { IoCheckmarkSharp } from 'react-icons/io5';
 import { MdPhoneInTalk } from 'react-icons/md';
 import './OurGuide.css';
+import { motion } from 'framer-motion';
+
 const OurGuide = () => {
   const text = '. travel agency . travel agency';
   // console.log("text", text);
@@ -11,9 +13,13 @@ const OurGuide = () => {
   return (
     <div className="container lg:h-screen">
       <div className="flex flex-col gap-y-5 lg:gap-y-0 lg:flex-row py-8  lg:py-20">
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.4,
+          }}
           className="lg:w-[60%] lg:pr-16"
         >
           <p className="uppercase text-[#2095AE] tracking-widest md:tracking-[4px] font-mono">
@@ -54,11 +60,15 @@ const OurGuide = () => {
               <p className="text-gray-600">855 333 4444</p>
             </div>
           </div>
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="1000"
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.4,
+            delay: 0.1,
+          }}
           className="lg:w-[40%] relative"
         >
           <img
@@ -85,7 +95,7 @@ const OurGuide = () => {
               })}
             </section>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -4,6 +4,8 @@ import italyImg from '../../../assets/italy1.jpg';
 import franceImg from '../../../assets/france1.jpg';
 import greeceImg from '../../../assets/greece1.jpg';
 import canadaImg from '../../../assets/canada1.jpg';
+import { motion } from 'framer-motion';
+
 const PopularTours = () => {
   return (
     <div className="bg-[#f4f5f8] mt-6 lg:mt-0 py-11 md:py-28">
@@ -38,10 +40,13 @@ const PopularTours = () => {
             img={italyImg}
           ></Card>
         </div>
-        <div
-          data-aos="fade-up"
-          data-aos-duration="400"
-          // data-aos-delay="300"
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.4,
+          }}
           className=""
         >
           <Card
@@ -53,8 +58,19 @@ const PopularTours = () => {
             cost="$400"
             img={franceImg}
           ></Card>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="200">
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.4,
+            delay: 0.1,
+          }}
+          data-aos="fade-up"
+          data-aos-duration="400"
+          data-aos-delay="200"
+        >
           <Card
             title="Greece Tour"
             days="2 Days"
@@ -64,8 +80,19 @@ const PopularTours = () => {
             cost="$100"
             img={greeceImg}
           ></Card>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="300">
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.4,
+            delay: 0.2,
+          }}
+          data-aos="fade-up"
+          data-aos-duration="400"
+          data-aos-delay="300"
+        >
           <Card
             title="Canada Tour"
             days="4 Days"
@@ -75,7 +102,7 @@ const PopularTours = () => {
             cost="$9000"
             img={canadaImg}
           ></Card>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

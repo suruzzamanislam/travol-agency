@@ -10,6 +10,8 @@ import { BsStarFill } from 'react-icons/bs';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { CgCheck } from 'react-icons/cg';
+import { motion } from 'framer-motion';
+
 const TravelarsReviews = () => {
   return (
     <div className="">
@@ -34,9 +36,12 @@ const TravelarsReviews = () => {
             </p>
           </div>
 
-          <div
-            data-aos="fade-up"
-            data-aos-duration={1000}
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 0.4,
+            }}
             className="md:absolute right-0 -bottom-20 bg-white p-3 md:p-6 lg:px-14 lg:py-12 shadow-sm shadow-gray-300 md:w-2/5 my-5 md:my-0"
           >
             <div className="container">
@@ -129,7 +134,7 @@ const TravelarsReviews = () => {
                 </div>
               </SwiperSlide>
             </Swiper>
-          </div>
+          </motion.div>
           <div className="md:w-3/5">
             <Swiper
               slidesPerView={4}
